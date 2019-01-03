@@ -1,0 +1,42 @@
+body 
+{
+	background: #8cd9b3;
+	color: #0d261a;
+}
+canvas 
+{
+	clear: left;
+	background: #1aff8c;
+	margin: 7px auto;
+}
+#keys 
+{
+	float: left;
+}
+#bestScore
+{
+	float: right;
+}
+#score 
+{
+	float: right;
+}
+#time 
+{
+	float: left;
+}
+#controlDisplay 
+{
+	max-width: 40%;
+	margin: 7px auto;
+}
+#gameDisplay
+{
+	max-width: 40%;
+	margin: 0px auto;
+	text-align: center;
+}
+#scoreDisplay 
+{
+	max-width: 100%;
+}

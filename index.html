@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Maze Game Generator</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="source.js" defer></script> <script type="text/javascript" src="solveMaze.js" defer></script>
+		<script type="text/javascript" src="mazeGenerator.js" defer></script> <script type="text/javascript" src="gameLoop.js" defer></script>
+	</head>
+	<body onload="MazeGame()">
+		<div id="gameDisplay">
+			<div id="scoreDisplay">
+				<div id="time">
+					<span>Time: </span> <span id="playerTime">00:00:000</span>
+				</div>
+				<div id="score">
+					<span>Score: </span> <span id="playerScore">00000</span>
+				</div>
+			</div>
+			<br>
+			<canvas id="gameCanvas" width="450" height="450"></canvas>
+		</div>
+		<div id="controlDisplay">
+			<div id="keys">
+				<h3> Maze Game </h3>
+				<select onchange="changeMazeSize(this)">
+					<option value="5">5 × 5</option> <option value="10">10 × 10</option>
+					<option value="15">15 × 15</option> <option value="20">20 × 20</option>
+				</select> <br>
+				<button onclick="MazeGame()">Start New Maze</button> <br>
+				<button onclick="alert(highScores);">High Scores</button> <br>
+				<br>
+			</div>
+			<div id="bestScore">
+				<span>High Scores:</span>
+				<p id="playerBestScores"></p>
+			</div>
+		</div>
+	</body>
+</html>
